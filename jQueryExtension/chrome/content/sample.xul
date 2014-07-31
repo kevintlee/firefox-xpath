@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<overlay id="sample" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		 
+	<script type="application/x-javascript" src="sample.js" />
+	<script type="application/x-javascript" src="jquery-2.0.1.js" />
+
+	<!-- Popup menu -->
+	<popup id="contentAreaContextMenu"> 
+		<!-- Displayed in popup menu only when text is selected -->
+		
+		<menuitem 
+			id="highlight-jquery" 
+			label="Highlight - jQuery" 
+			oncommand="highlight();"/>
+		<menuitem 
+			id="ajax-jquery" 
+			label="Ajax - jQuery" 
+			oncommand="ajaxCall();"/>
+		
+	</popup> 
+
+	<statusbar id="status-bar">
+		<statusbarpanel id="my-panel" label="jQueryExtension Running"  />
+	</statusbar>
+
+		
+	 
+</overlay>
